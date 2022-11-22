@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:enableOnBackInvokedCallback="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.Duong.Expense.Login.LoginActivity"
+            android:exported="true"
+            android:label="M-EXPENSES" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.Duong.Expense.ExpenseActivity.ExpenseShowJsonActivity"
+            android:exported="false"
+            android:label="ExpenseS List"
+            >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.Duong.Expense.ExpenseActivity.Add_Expense_Activity"
+            android:exported="true"
+            android:foregroundServiceType="location"
+            android:parentActivityName="com.Duong.Expense.ExpenseActivity.ExpenseActivity" />
+        <activity
+            android:name="com.Duong.Expense.ExpenseActivity.ExpenseActivity"
+            android:exported="true"
+            android:parentActivityName="com.Duong.Expense.ExpenseActivity.ExpenseActivity" />
+        <activity
+            android:name="com.Duong.Expense.ExpenseActivity.UpdateExpenseActivity"
+            android:parentActivityName="com.Duong.Expense.ExpenseActivity.ExpenseActivity" />
+        <!-- trip -->
+        <activity
+            android:name="com.Duong.Expense.TripActivity.UpdateActivity"
+            android:parentActivityName="com.Duong.Expense.TripActivity.TripActivity" />
+        <activity
+            android:name="com.Duong.Expense.TripActivity.AddActivity"
+            android:label=""
+            android:parentActivityName="com.Duong.Expense.TripActivity.TripActivity" />
+        <activity
+            android:name="com.Duong.Expense.TripActivity.TripActivity"
+            android:exported="true"
+            android:label="M-EXPENSES"
+            >
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+    </application>
+
+</manifest>

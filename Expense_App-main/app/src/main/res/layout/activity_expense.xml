@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".ExpenseActivity.ExpenseActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewExpense"
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tripName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Trip Name 1"
+            android:textColor="#FEFEFE"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tripName"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+        <TextView
+            android:id="@+id/destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView18"
+            android:layout_alignBottom="@+id/textView18"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toEndOf="@+id/textView18"
+            android:text="Location"
+            android:textColor="#FEFEFE"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dateFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView10"
+            android:layout_alignBottom="@+id/textView10"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="-1dp"
+
+            android:layout_toEndOf="@+id/textView10"
+            android:text="18 Oct 2022"
+            android:textColor="#FEFEFE"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dateTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView11"
+            android:layout_alignBottom="@+id/textView11"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="-1dp"
+
+            android:layout_toEndOf="@+id/textView11"
+            android:text="18 Oct 2022"
+            android:textColor="#FEFEFE"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/Risk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="-1dp"
+
+            android:layout_toEndOf="@+id/textView11"
+            android:text="Yes/No"
+            android:textColor="#FEFEFE"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="-1dp"
+
+            android:layout_toEndOf="@+id/textView11"
+            android:text="description"
+            android:textColor="#FEFEFE"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView4"
+
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/imageView4"
+            android:text="Start date:"
+            android:textColor="#FEFEFE"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView3"
+
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/imageView3"
+            android:text="Location:"
+            android:textColor="#FEFEFE"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView5"
+
+            android:layout_alignBottom="@+id/imageView5"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toEndOf="@+id/imageView5"
+            android:text="End date:"
+            android:textColor="#FEFEFE"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView"
+
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toEndOf="@+id/imageView"
+
+            android:text="Risk:"
+            android:textColor="#FEFEFE"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageViewdis"
+
+            android:layout_alignBottom="@+id/imageViewdis"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toEndOf="@+id/imageViewdis"
+
+
+            android:text="Description: "
+            android:textColor="#FEFEFE"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageViewMoney"
+
+            android:layout_alignBottom="@+id/imageViewMoney"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toEndOf="@+id/imageViewdis"
+
+
+            android:text="Total Expense: "
+            android:textColor="#FEFEFE"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/Total_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView5"
+
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toEndOf="@+id/textView5"
+
+            android:text="VND"
+            android:textColor="#FEFEFE"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignStart="@+id/imageView3"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/ic_baseline_calendar_month_24" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView4"
+            android:layout_alignStart="@+id/imageView4"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/ic_baseline_calendar_month_24" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView5"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/ic_baseline_dangerous_24" />
+
+        <ImageView
+            android:id="@+id/imageViewdis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/ic_baseline_edit_note_24" />
+        <ImageView
+            android:id="@+id/imageViewMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewdis"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/ic_baseline_attach_money_24" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/empty_imageview_Expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_empty" />
+
+    <TextView
+        android:id="@+id/no_data_Expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Expense Available."
+        android:textSize="20sp"
+        android:alpha="0.4"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empty_imageview_Expense" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Floating_Add_button_Expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="28dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
